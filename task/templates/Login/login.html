@@ -1,12 +1,84 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        html {
+            background-color: white;
+        }
+        h1 {
+            color: #53bd84;
+        }
+        form {
+            width:500px;
+            margin: 100px auto;
+        }
+        .search {
+            color: rgba(50, 50, 50, 1);
+            padding:12px 60px;
+            background:rgba(172, 172, 172, 0.2);
+            border:0px solid #dbdbdb;
+            border-radius: 5px;
+            
+        }
+        .button {
+            /* position:relative; */
+            padding:10px 60px;
+            left:-8px;
+            border:2px solid #53bd84;
+            border-radius: 60px;
+            background-color:#53bd84;
+            color:#fafafa;
+        }
+        .button:hover  {
+            background-color:#fafafa;
+            color:#207cca;
+        }
+        .container .pass {
+            margin:50px auto;
+        }
+
+        .container .pass .lp {
+            padding-right: 70px;
+        }
+        /* .bacground {
+            padding:5px 50px;
+            background:rgba(50, 50, 50, 0.2);
+            border:0px solid #dbdbdb;
+            border-radius: 20px;
+        } */
+
+    </style>
+    <meta charset="utf-8">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>berantakan</h1>
+    <center>
+        <form method="post" action=""> 
+            {% csrf_token %}
+            <h1>Login</h1>
+            <div class="container">
+                <input class="search" type="text" placeholder="Masukan Email..." required><br>
+                <br>	
+                <input class="search" type="text" placeholder="Masukan Katasandi..." required><br>
+                <br>
+                <!-- <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                    <label class="form-check-label" for="dropdownCheck">
+                      Ingat saya
+                    </label>
+                  </div>
+                  <br> -->
+                <button type="submit" class="button">Login</button>
+                <br>
+
+                <div class="pass">
+                    <a class="lp" href="" style="color:DodgerBlue;">Lupa password?</a>
+                    <a href="" style="color:DodgerBlue;">Register</a>
+                </div>
+            </div>	
+        </form>
+    </center>
 </body>
 </html>
+
