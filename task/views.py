@@ -20,3 +20,9 @@ def index(req):
 #     })
 def register(req):
     return render(req, 'register/reg.html')
+
+def home(req):
+    return render(req, 'home/home.html')
+
+def homes(req):
+    return render(req, 'homes/homes.html')
