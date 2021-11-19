@@ -39,12 +39,13 @@
         .container .pass .lp {
             padding-right: 70px;
         }
-        /* .bacground {
-            padding:5px 50px;
-            background:rgba(50, 50, 50, 0.2);
+        .container {
+            padding:20px 50px;
+            background:rgba(192, 245, 240, 0.2);
             border:0px solid #dbdbdb;
-            border-radius: 20px;
-        } */
+            border-radius: 10px;
+            margin: 10px 50px;
+        }
 
     </style>
     <meta charset="utf-8">
@@ -56,19 +57,12 @@
     <center>
         <form method="post" action=""> 
             {% csrf_token %}
-            <h1>Login</h1>
             <div class="container">
+                <h1>Login</h1>
                 <input class="search" type="text" placeholder="Masukan Email..." required><br>
                 <br>	
                 <input class="search" type="text" placeholder="Masukan Katasandi..." required><br>
                 <br>
-                <!-- <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                    <label class="form-check-label" for="dropdownCheck">
-                      Ingat saya
-                    </label>
-                  </div>
-                  <br> -->
                 <button type="submit" class="button">Login</button>
                 <br>
 
