@@ -18,11 +18,30 @@ def index(req):
 #     return render(req, 'Login/login.html', {
 #         'data': data,
 #     })
+
 def register(req):
     return render(req, 'register/reg.html')
 
 def home(req):
     return render(req, 'home/home.html')
 
+def minimalis(req):
+    return render(req, 'home/minimalis.html')
+
+def luxery(req):
+    return render(req, 'home/luxery.html')
+
+def industrial(req):
+    return render(req, 'home/industrial.html')
+
+def klasik(req):
+    return render(req, 'home/klasik.html')
+
 def homes(req):
     return render(req, 'homes/homes.html')
+
+def profil(req):
+    return render(req, 'profil/profil.html')
+
+def detail(req):
+    return render(req, 'detail/detail.html')
