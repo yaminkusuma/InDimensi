@@ -29,3 +29,9 @@ def home(req):
 
 def homes(req):
     return render(req, 'homes/homes.html')
+
+def kat(req):
+    return render(req, 'katalog/kat.html')
+
+def det(req):
+    return render(req, 'katalog/det.html')
