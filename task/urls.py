@@ -5,6 +5,13 @@ urlpatterns = [
     path('', views.index),
     path('regis/', views.register),
     path('regis/home/', views.home),
+    path('', views.home),
+
+    # path('profil/', views.profil)
+
+    path('regis/', views.register),
+
+    path('login/', views.index),
     path('minimalis/', views.minimalis),
     path('luxery/', views.luxery),
     path('industrial/', views.industrial),
@@ -16,4 +23,5 @@ urlpatterns = [
     path('detail/', views.detail),
     path('about/', views.about),
     
+
 ]
