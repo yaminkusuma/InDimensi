@@ -9,8 +9,9 @@ def index(req):
 def profil(req):
     return render(req, 'profil/profil.html')
 
-def profil1(req):
-    return render(req, 'profil/profil1.html')
+def about (req):
+    return render(req, 'profil/about.html')
+
 # def login(req):
 #     if req.POST:
 #         input_email = req.POST['email']
@@ -46,6 +47,11 @@ def klasik(req):
 def homes(req):
     return render(req, 'homes/homes.html')
 
+def kat(req):
+    return render(req, 'katalog/kat.html')
+
+def det(req):
+    return render(req, 'katalog/det.html')
 def profil(req):
     return render(req, 'profil/profil.html')
 
