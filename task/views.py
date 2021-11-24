@@ -8,6 +8,9 @@ def index(req):
 
 def profil(req):
     return render(req, 'profil/profil.html')
+
+def profil1(req):
+    return render(req, 'profil/profil1.html')
 # def login(req):
 #     if req.POST:
 #         input_email = req.POST['email']
@@ -45,6 +48,8 @@ def homes(req):
 
 def profil(req):
     return render(req, 'profil/profil.html')
+
+
 
 def detail(req):
     return render(req, 'detail/detail.html')
