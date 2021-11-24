@@ -16,6 +16,8 @@ urlpatterns = [
 
 
     path('homes/', views.homes),
+    path('kat/', views.kat),
+    path('det/', views.det),
     path('profil/', views.profil),
     path('detail/', views.detail),
 
