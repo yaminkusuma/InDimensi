@@ -43,16 +43,13 @@ def klasik(req):
 def homes(req):
     return render(req, 'homes/homes.html')
 
-<<<<<<< HEAD
 def kat(req):
     return render(req, 'katalog/kat.html')
 
 def det(req):
     return render(req, 'katalog/det.html')
-=======
 def profil(req):
     return render(req, 'profil/profil.html')
 
 def detail(req):
     return render(req, 'detail/detail.html')
->>>>>>> 806bba5f412414cfd0324bce4dc59f8ac1cfcd7e
