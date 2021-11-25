@@ -50,6 +50,7 @@ def kat(req):
 
 def det(req):
     return render(req, 'katalog/det.html')
+    
 def profil(req):
     return render(req, 'profil/profil.html')
 

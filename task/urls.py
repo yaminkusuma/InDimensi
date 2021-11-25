@@ -9,6 +9,7 @@ urlpatterns = [
     path('regis/', views.register),
 
     path('login/', views.index),
+
     path('minimalis/', views.minimalis),
     path('luxery/', views.luxery),
     path('industrial/', views.industrial),
@@ -16,9 +17,12 @@ urlpatterns = [
 
 
     path('homes/', views.homes),
-    path('kat/', views.kat),
-    path('det/', views.det),
     path('profil/', views.profil),
     path('detail/', views.detail),
+    
+    path('det/', views.det),
+    path('kat/', views.kat),
+
+    
 
 ]
