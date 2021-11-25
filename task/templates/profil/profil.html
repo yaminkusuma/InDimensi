@@ -7,9 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <title>Web Profil</title>
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
         body,h1,h2,h3,h4,h5,h6 {
             font-family: "Raleway", sans-serif
@@ -26,16 +29,56 @@
             </a>
             <h4 style="margin-top: 10px; margin-right: 10px;"><b>INDIMENSI</b></h4>  
             <img style="border-radius: 50%; width: 150px; height: 150px; " src="https://ih1.redbubble.net/image.1266365450.5771/ur,pin_large_front,square,600x600.jpg" style="width:45%;" class="w3-round"><br><br>
-            <a>Agust D
-                <br>
+            <a style="margin-left: 35px; margin-top: 33px;">Agust D
+                <br style="margin-left: 30px;">
                 Kab.Yogyakarta
             </a>
         </div>
-        <div class="w3-section w3-bottombar w3-padding-15">
-     
+        
+        <div class="w3-section w3-bottombar w3-padding-10">
         </div>
+        <div class="rating">
+            <input type="radio" name="star" id="star1"><label for="star1"></label>
+            <input type="radio" name="star" id="star2"><label for="star2"></label>
+            <input type="radio" name="star" id="star3"><label for="star3"></label>
+            <input type="radio" name="star" id="star4"><label for="star4"></label>
+            <input type="radio" name="star" id="star5"><label for="star5"></label>
+            
+        </div>
+        <style >
+            body{
+            	margin:0px; padding: 0; background:#f5f0f0;
+        }
+            .rating{
+	            position: absolute;
+	            top:65%;
+	            left: 50%;
+	            transform: translate(-50%, -50%) rotateY(180deg);
+	            display: flex;
+        }
+            .rating input{
+	            display: none;
+        }
+            .rating label{
+            	display: block;
+	            cursor: pointer; width: 30px;
+	            /*background: #ccc;*/
+        }
+            .rating label:before{ 
+	            content:'\f005'; font-family: fontAwesome; position: relative; display: block; font-size: 40px; color: #101010;
+        }
+            .rating label:after{
+	            content:'\f005'; font-family: fontAwesome; position: absolute; display: block; font-size: 40px; color: #fffa00; top:0; opacity: 0; transition: .5s; text-shadow: 0 2px 5px rgba(0,0,0,.5);
+        }
+            .rating label:hover:after,
+            .rating label:hover ~ label:after,
+            .rating input:checked ~ label:after
+        {
+	        opacity: 1;
+        }
+        </style>
         <div class="w3-bar-block">
-            <a href="about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
                     class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
             <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
                     class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
@@ -53,30 +96,57 @@
             <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
                     class="fa fa-bars"></i></span>
             <div class="w3-container">
-                <h1 style="margin-top:10px; margin-left: 20PX;"><b>MY PROFIL</b></h1>
-                <h2 style="margin-top:10px;margin-bottom: 10px; margin-left: 20PX;"><b>Agust D</b></h2>
+                <h1 style="margin-top:20px; margin-left: 30PX;"><b>MY PROFIL</b></h1>
+                <h2 style="margin-top:10px; margin-left: 30PX;"><b>Agust D</b></h2>
                 <div style="float: right;">
-                    <img style="border-radius:; width: 190px; height: 190px; " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqv0T5NRVuqb0PfuxD1waEvyy0gTydYrvJwQ&usqp=CAU" style=";" class=""><br><br>  
+                    <img style="border-radius:; width: 200px; height: 200px; " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqv0T5NRVuqb0PfuxD1waEvyy0gTydYrvJwQ&usqp=CAU" style=";" class=""><br><br>  
                 </div>
-                <div style="width: 80%; height: 200px; background-color: rgb(243, 245, 245);">
-                    <div style="float: left; margin-left: 20PX; font-size: 20px;">
-                       Desainer Engineer
-                       <br style="font-size: 5px;">
-                       i'm a desainer specialis furniture
+                <div style="width: 60%; height: 200px; background-color: rgb(243, 245, 245);">
+                    <div style="float: left; margin-left: 30PX; font-size: 18px;">
+                       Desainer interior
+                       <br style="font-size: 3px;">
+                       i'm a design interior specialis
                        <br>
-                       Former student of S1 Computer Science (S.Kom) and Master of Information Technology (M.Eng) in Yogyakarta. 
-                       Currently serving as ASN and practitioners in the field of Information Technology.
+                       a former interior design undergraduate (S.Ds) student in yogyakarta. 
+                       And has worked on several projects that were completed in a short time.
+                       <br>
+                       stop worrying about design interior probelms.
+                       I am ready to help, handle (provide solutions), resolve as needed.
+
                     </div>
                     
                 </div>
             </div>
+            <div style="margin-left: 70px; width: 500px;">
+                <h3><b>Keahlian</b></h3>
+                <ul class="keahlian">
+                <div>
+                <li class="ipungtingkat_penyelesaian">Tingkat Penyelesaian 90%</li>
+                </div>
+                <div>
+                <li class="ipungjam_online">jam online 70%</li>
+                </div>
+                <div>
+                <li class="ipungprojek_selesai">projek selesai 80%</li>
+                </div>
+                <div>
+                <li class="ipungpoint">point 70%</li>
+                </div>
+                </ul>
+                </div>
+                <style scoped="" type="text/css"> .post-body h3{background:#fff;box-shadow:0 1px 6px rgba(32,33,36,.28);line-height:2em;border-radius:5px;color:#43ce8e;border-bottom:2px solid #43ce8e;font-family:'Google Sans',Tahoma,Sans-serif;text-transform:uppercase;font-weight:400;font-size:14px;margin:5px 0;padding:8px 15px}
+                .xabout{color:#07ACEC!important;border-bottom:3px solid #07ACEC!important}
+                ul.keahlian{padding:0}
+                .keahlian div{list-style:none;;margin-bottom:10px;font-size:12px;border-radius:20px;color:#fff;background:#EAEAEA}
+                .keahlian li{padding:5px 20px;border-radius:20px}
+                .ipungtingkat_penyelesaian{background:#0091ea;width:90%}
+                .ipungjam_online{background:#009624;width:70%}
+                .ipungprojek_selesai{background:#ef6c00;width:80%}
+                .ipungpoint{background:#d64646;width:70%}
+                </style>
         </header>
-    </div>
-    
-    
-
+    </div>    
 </body>
- 
      
 </body>
 </html>
