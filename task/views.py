@@ -53,3 +53,6 @@ def profil(req):
 
 def detail(req):
     return render(req, 'detail/detail.html')
+
+def customer(req):
+    return render(req, 'inputan/customer.html')
