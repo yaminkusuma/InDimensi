@@ -46,17 +46,31 @@ def register(req):
 def home(req):
     return render(req, 'home/home.html')
 
+# nav kategori
 def minimalis(req):
     return render(req, 'home/minimalis.html')
-
 def luxery(req):
     return render(req, 'home/luxery.html')
-
 def industrial(req):
     return render(req, 'home/industrial.html')
-
 def klasik(req):
     return render(req, 'home/klasik.html')
+
+# nav project
+def cariproject(req):
+    return render(req, 'home/cariproject.html')
+def buatproject(req):
+    return render(req, 'home/buatproject.html')
+def project_lama(req):
+    return render(req, 'home/project_lama.html')
+def menjadi_worker(req):
+    return render(req, 'home/menjadi_worker.html')
+
+# nav jasa
+def carijasa(req):
+    return render(req, 'home/carijasa.html')
+def buatjasa(req):
+    return render(req, 'home/buatjasa.html')
 
 def homes(req):
     return render(req, 'homes/homes.html')
@@ -66,6 +80,7 @@ def kat(req):
 
 def det(req):
     return render(req, 'katalog/det.html')
+    
 def profil(req):
     return render(req, 'profil/profil.html')
 
@@ -73,3 +88,6 @@ def profil(req):
 
 def detail(req):
     return render(req, 'detail/detail.html')
+
+def customer(req):
+    return render(req, 'inputan/customer.html')
