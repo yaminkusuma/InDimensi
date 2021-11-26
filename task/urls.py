@@ -33,8 +33,14 @@ urlpatterns = [
     path('homes/', views.homes),
     path('profil/', views.profil),
     path('detail/', views.detail),
+<<<<<<< HEAD
     path('customer/', views.customer),
 
+=======
+
+    path('customer/', views.customer),
+    
+>>>>>>> 1705b1f2c9aca811c71ae356f0c5db0d2e1f61bd
     path('det/', views.det),
     path('kat/', views.kat),
 
