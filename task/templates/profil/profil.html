@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="templates/home">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+=======
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Web Profil</title>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+>>>>>>> 2d20ab606f4314cbbb6844701c5616f2009bf7cd
     <title>Document</title>
     <style>
         .text-author{
@@ -15,6 +27,7 @@
         }
     </style>
 </head>
+<<<<<<< HEAD
 <body>
     <!-- <div class="navbar"> -->
       <div class="justify-content-start navbar-collapse" style="display: inline-block; font-size:12px; margin-left: 40px;">
@@ -88,6 +101,152 @@
                     <i class="" aria-hidden="true"></i>Login</a>
                     <a class="nav-link text text-primary" style="display: inline-block;" aria-current="page" href="/regis">
                     <i class="" aria-hidden="true"></i>Register</a>
+=======
+<body class="w3-light-grey w3-content" style="max-width:1600px"> 
+  <!--Sidebar/menu-->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:200px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+                title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <h4 style="margin-top: 10px; margin-right: 10px;"><b>INDIMENSI</b></h4>  
+            <img style="border-radius: 50%; width: 150px; height: 150px; " src="https://ih1.redbubble.net/image.1266365450.5771/ur,pin_large_front,square,600x600.jpg" style="width:45%;" class="w3-round"><br><br>
+            <a style="margin-left: 35px; margin-top: 33px;">Agust D
+                <br style="margin-left: 30px;">
+                Kab.Yogyakarta
+            </a>
+        </div>
+        
+        <div class="w3-section w3-bottombar w3-padding-10">
+        </div>
+        <div class="rating">
+            <input type="radio" name="star" id="star1"><label for="star1"></label>
+            <input type="radio" name="star" id="star2"><label for="star2"></label>
+            <input type="radio" name="star" id="star3"><label for="star3"></label>
+            <input type="radio" name="star" id="star4"><label for="star4"></label>
+            <input type="radio" name="star" id="star5"><label for="star5"></label>
+            
+        </div>
+        <style >
+            body{
+            	margin:0px; padding: 0; background:#f5f0f0;
+        }
+            .rating{
+	            position: absolute;
+	            top:65%;
+	            left: 50%;
+	            transform: translate(-50%, -50%) rotateY(180deg);
+	            display: flex;
+        }
+            .rating input{
+	            display: none;
+        }
+            .rating label{
+            	display: block;
+	            cursor: pointer; width: 30px;
+	            /*background: #ccc;*/
+        }
+            .rating label:before{ 
+	            content:'\f005'; font-family: fontAwesome; position: relative; display: block; font-size: 40px; color: #101010;
+        }
+            .rating label:after{
+	            content:'\f005'; font-family: fontAwesome; position: absolute; display: block; font-size: 40px; color: #fffa00; top:0; opacity: 0; transition: .5s; text-shadow: 0 2px 5px rgba(0,0,0,.5);
+        }
+            .rating label:hover:after,
+            .rating label:hover ~ label:after,
+            .rating input:checked ~ label:after
+        {
+	        opacity: 1;
+        }
+        </style>
+        <div class="w3-bar-block">
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+                    class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+        </div>
+    </nav>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+    </div>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left: 190px">
+    <!-- Header -->    
+        <header id="about">
+            <a href="#"><img src="img/avatar_g2.jpg" style="width:65px;"
+                    class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+                    class="fa fa-bars"></i></span>
+            <div class="w3-container">
+                <h1 style="margin-top:20px; margin-left: 30PX;"><b>MY PROFIL</b></h1>
+                <h2 style="margin-top:10px; margin-left: 30PX;"><b>Agust D</b></h2>
+                <div style="float: right;">
+                    <img style="border-radius:; width: 200px; height: 200px; " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqv0T5NRVuqb0PfuxD1waEvyy0gTydYrvJwQ&usqp=CAU" style=";" class=""><br><br>  
+                </div>
+                <div style="width: 60%; height: 200px; background-color: rgb(243, 245, 245);">
+                    <div style="float: left; margin-left: 30PX; font-size: 18px;">
+                       Desainer interior
+                       <br style="font-size: 3px;">
+                       i'm a design interior specialis
+                       <br>
+                       a former interior design undergraduate (S.Ds) student in yogyakarta. 
+                       And has worked on several projects that were completed in a short time.
+                       <br>
+                       stop worrying about design interior probelms.
+                       I am ready to help, handle (provide solutions), resolve as needed.
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div style="margin-left: 70px; width: 500px;">
+                <h3><b>Keahlian</b></h3>
+                <ul class="keahlian">
+                <div>
+                <li class="ipungtingkat_penyelesaian">Tingkat Penyelesaian 90%</li>
+                </div>
+                <div>
+                <li class="ipungjam_online">jam online 70%</li>
+                </div>
+                <div>
+                <li class="ipungprojek_selesai">projek selesai 80%</li>
+                </div>
+                <div>
+                <li class="ipungpoint">point 70%</li>
+                </div>
+                </ul>
+                </div>
+                <style scoped="" type="text/css"> .post-body h3{background:#fff;box-shadow:0 1px 6px rgba(32,33,36,.28);line-height:2em;border-radius:5px;color:#43ce8e;border-bottom:2px solid #43ce8e;font-family:'Google Sans',Tahoma,Sans-serif;text-transform:uppercase;font-weight:400;font-size:14px;margin:5px 0;padding:8px 15px}
+                .xabout{color:#07ACEC!important;border-bottom:3px solid #07ACEC!important}
+                ul.keahlian{padding:0}
+                .keahlian div{list-style:none;;margin-bottom:10px;font-size:12px;border-radius:20px;color:#fff;background:#EAEAEA}
+                .keahlian li{padding:5px 20px;border-radius:20px}
+                .ipungtingkat_penyelesaian{background:#0091ea;width:90%}
+                .ipungjam_online{background:#009624;width:70%}
+                .ipungprojek_selesai{background:#ef6c00;width:80%}
+                .ipungpoint{background:#d64646;width:70%}
+                </style>
+        </header>
+    </div>    
+</body>
+     
+<!-- </body>
+</html>
+    <body>
+
+
+        <div style="width:px; height: 20px; background-color:#ffffff; margin-left:40px; " class="row mb-2"></div>
+            <div>
+                <img style="width:70px; border-radius:100px; margin-left:60px; margin-bottom: 30px;" src="https://decorathing.com/wp-content/uploads/2017/09/Luxury-Home-Modern-House-Design-3020.jpg" alt="..." />
+                <div class="text-author" style="font-size: 18px;">
+                    <h4>Antonio Markus</h4>
+                    <p>Yogyakarta</p>
+                    <h6 style="font-size: 12px; color: #69707a;">Disainer</h6>
+                </div>
+                <div class="justify-content-end navbar-collapse mx-4 mt-4" style="padding-left: 20px; margin-top: 40px; margin-right: 60px; float:right; font-size:12px">
+                  <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/kat">Katalog</a></div>
+>>>>>>> 2d20ab606f4314cbbb6844701c5616f2009bf7cd
                 </div>
             </ul>
           </div>
@@ -129,5 +288,10 @@
       <script src="js/scripts.js"></script>
     </section>
 
+<<<<<<< HEAD
 </body>
 </html>
+=======
+    </body>
+</html> -->
+>>>>>>> 2d20ab606f4314cbbb6844701c5616f2009bf7cd
