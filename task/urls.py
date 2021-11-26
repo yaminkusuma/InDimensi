@@ -33,16 +33,10 @@ urlpatterns = [
     path('homes/', views.homes),
     path('profil/', views.profil),
     path('detail/', views.detail),
-<<<<<<< HEAD
     path('customer/', views.customer),
-=======
-    
+
     path('det/', views.det),
     path('kat/', views.kat),
 
-
-    path('about/', views.about),
     
-
->>>>>>> c8c80910d3036e1dc282b2345ae396d8659ca2bf
 ]
