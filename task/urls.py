@@ -2,16 +2,13 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home),
+    # path('', views.home),
+    path('', views.index),
     path('regis/', views.register),
     path('home/', views.home),
-    path('', views.index),
-
-    # path('profil/', views.profil)
 
     path('regis/', views.register),
-
-    path('login/', views.index),
+    path('login/', views.login),
 
     # nav kategori
     path('minimalis/', views.minimalis),
