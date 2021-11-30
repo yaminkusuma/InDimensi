@@ -92,7 +92,7 @@
                   <li class="nav-item">
                     <a class="nav-link " aria-current="page" href="/home">beranda</a>
                   </li>
-                  <li class="nav-item dropdown">
+                  <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Kategori
                     </a>
@@ -102,7 +102,7 @@
                       <li><a class="dropdown-item" href="/industrial">Industrial</a></li>
                       <li><a class="dropdown-item" href="/klasik">Klasik</a></li>
                     </ul>
-                  </li>
+                  </li> -->
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Project
@@ -126,66 +126,105 @@
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="">Dashboard</a></li>
                       <li><a class="dropdown-item" href="">Project saya</a></li>
                       <li><a class="dropdown-item" href="">Akun saya</a></li>
                       <li><a class="dropdown-item" href="">Point saya</a></li>
                       <li><a class="dropdown-item" href="">Pengaturan</a></li>
                     </ul>
                   </li>
+                  <div class="justify-content-end navbar-collapse" style="float:right; font-size:15px; padding-left: 50px;">
+                    <a class="nav-link text text-dark" style="display: inline-block;" aria-current="page" href="/login">
+                    <i class="" aria-hidden="true"></i>Login</a>
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Login
+                    </button> -->
+                    <a class="nav-link text text-primary" style="display: inline-block;" aria-current="page" href="/regis">
+                    <i class="" aria-hidden="true"></i>Register</a>
+                </div>
                 </ul>
               </div>
             </div>
           </nav>
       
-        <section class="py-5">
-            <div class="row">
-                <div class=" input-group justify-content-center">
-                    <div class="text-author" style=" margin-left: 30px; padding-right: 20px; font-size:12px">
-                        <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="/customer">Buat Project</a></div>
-                    </div>
-                    <div class="form-outline">
-                        <input placeholder="Search" type="search" id="form1" class="form-control"/>
-                    </div>
-                    <button type="button" class="btn btn-primary">
-                        <i class="fas fa-search"></i>
-                    </button>
+          <section class="py-5">
+            <div class=" input-group justify-content-center">
+                <div class="text-author" style=" margin-left: 30px; padding-right: 20px; font-size:12px">
+                    <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="/buatp">Buat proyek</a></div>
                 </div>
-                <div class="col-sm-6" style="margin-left: 60px; padding-bottom: 20px;">
-                    <h4>Cari Project </h4>
-                    <p style="color:#a1aab9 ;">Dapatkan pekerjaan Sesuai bidang dan keahlian</p>
+                <div class="form-outline">
+                    <input placeholder="Search" type="search" id="form1" class="form-control"/>
                 </div>
+                <button type="button" class="btn btn-primary">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
-                <div class="grid-container" style="grid-template-columns: auto;">
-                    <div class="row g-1" style=" border-radius: 5px; margin-left: 60px; width: 600px; height: 300px; background-color:#f2f5f8">
+            <div class="col-sm-6" style="margin-left: 60px; padding-bottom: 20px;">
+                <h4>Cari Proyek </h4>
+                <p style="color:#a1aab9 ;">Sesuai keahlian dan kemampuan anda</p>
+            </div>
+            
+                  <div class="row">
+                    <div class="col">
+                      <div class="row g-1" style=" border-radius: 10px; margin-left: 60px; height: 300px; background-color:#f2f5f8">
                         <div class="col-md-4" style="width: 120px;">
                             <img style="width:80px; border-radius:100px; margin-left:20px; margin-top:10px" src="https://decorathing.com/wp-content/uploads/2017/09/Luxury-Home-Modern-House-Design-3020.jpg" alt="..." />
                         </div>
                         <div class="col-md-8">
                             <div class="card-body p-2 mt-0">
-                                <h5 class="mb-0 mt-0"><a href="/profil">Dibutuhkan jasa interior ...</a></h5> <span>Senior Desain</span>
-                        <div class="p-0 mt-1 bg-primary d-flex justify-content-between rounded text-white stats" style="width: 300px;">
-                            <div class="d-flex flex-column"> <span class="projects">Pemilik</span> <span class="number1">Antonio M</span> </div>
-                            <div class="d-flex flex-column"> <span class="points">Bayaran</span> <span class="number2">25.000.000</span> </div>
-                            <div class="d-flex flex-column"> <span class="meter">Deadline/</span> <span class="number3">30 Hari</span></div>
+                                <h5 class="mb-0 mt-0"><a href="/profil">Antonio Markus</a></h5> <span>Senior Desain</span>
+                              <div class="p-0 mt-1 bg-primary d-flex justify-content-between rounded text-white stats" style="width: 200px;">
+                                <div class="d-flex flex-column"> <span class="projects">Projects</span> <span class="number1">108</span> </div>
+                                <div class="d-flex flex-column"> <span class="points">Points</span> <span class="number2">20.23</span> </div>
+                                <div class="d-flex flex-column"> <span class="meter">Meter/</span> <span class="number3">24.000</span></div>
+                              </div>
+                            </div>
                         </div>
-                    </div>
-                    </div>
-                    <div style="  margin-left: 20px;">
-                        <h5>Butuh jasa desain.</h5>
-                        <p>Saya ingin membuat rumah minimalis sederhana,3 kamar tidur, 1 ruang tamu.
+                            <div style="  margin-left: 20px;">
+                              <h5>Desain Interior</h5>
+                              <p>Berbagai jenis desain sesuai keinginan, bisa lansung cek di katalog saya, pengukuran bisa langsung kita diskusikan.</p>
+                            </div>
+                          <div>
+                            <div class="text-author" style="float:right; margin-left: 30px; padding-right: 20px; font-size:12px">
+                              <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="#">Ambil Proyek</a></div>
+                            </div>
+                            <div class="text-author" style="float: right; font-size:12px">
+                              <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="#">Lihat Proyek</a></div>
+                            </div>
+                          </div>                
+                      </div>
 
-                        </p>
                     </div>
-                    <div>
-                        <div class="text-author" style="float:right; margin-left: 30px; padding-right: 20px; font-size:12px">
-                            <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="#">Ambil Project</a></div>
+                    <div class="col">
+                      <div class="row g-1" style=" border-radius: 10px; margin-right: 80px; height: 300px; background-color:#f2f5f8">
+                        <div class="col-md-4" style="width: 120px;">
+                            <img style="width:80px; border-radius:100px; margin-left:20px; margin-top:10px" src="https://decorathing.com/wp-content/uploads/2017/09/Luxury-Home-Modern-House-Design-3020.jpg" alt="..." />
                         </div>
-                        <div class="text-author" style="float: right; font-size:12px">
-                            <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="#">Lihat Project</a></div>
+                        <div class="col-md-8">
+                            <div class="card-body p-2 mt-0">
+                                <h5 class="mb-0 mt-0"><a href="/profil">Antonio Markus</a></h5> <span>Senior Desain</span>
+                              <div class="p-0 mt-1 bg-primary d-flex justify-content-between rounded text-white stats" style="width: 200px;">
+                                <div class="d-flex flex-column"> <span class="projects">Projects</span> <span class="number1">108</span> </div>
+                                <div class="d-flex flex-column"> <span class="points">Points</span> <span class="number2">20.23</span> </div>
+                                <div class="d-flex flex-column"> <span class="meter">Meter/</span> <span class="number3">24.000</span></div>
+                              </div>
+                            </div>
                         </div>
-                    </div>                
-                </div>
-            </div>
+                            <div style="  margin-left: 20px;">
+                              <h5>Desain Interior</h5>
+                              <p>Berbagai jenis desain sesuai keinginan, bisa lansung cek di katalog saya.</p>
+                            </div>
+                          <div>
+                            <div class="text-author" style="float:right; margin-left: 30px; padding-right: 20px; font-size:12px">
+                              <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="#">Ambil Proyek</a></div>
+                            </div>
+                            <div class="text-author" style="float: right; font-size:12px">
+                              <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="#">Lihat Proyek</a></div>
+                            </div>
+                          </div>                
+                      </div>
+                    </div>
+                  </div>
                 
         </section>
         

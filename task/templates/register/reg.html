@@ -9,28 +9,32 @@
         h2 {
             color: #53bd84;
         }
-        /* .container {
-            padding:5px 60px;
+        .container {
             background:rgba(192, 245, 240, 0.2);
             border:0px solid #dbdbdb;
-            border-radius: 10px;
-        } */
+            border-radius: 20px;
+            width: 400px;
+            padding-top: 10px;
+            padding-bottom: 60px;
+        }
     </style>
 
 </head>
 <body>
     <section class="container" style="padding-left: 10%;">
+    
+    <div class="dd">
 
         <h2 style="margin-top: 5%;" class="text-uppercase text-center mb-5">Form Register</h2>
-      
+        
         <form style="margin-top: 5%;">
-
+            
             <div class="form-outline mb-4">
                 <label class="form-label" >Email</label><br>
                 <input type="email"/>
             </div>
             <br>
-
+            
             <div>
                 <label class="form-label" >Katasandi</label><br>
                 <input class="search" type="text" required><br>
@@ -41,20 +45,19 @@
                 <label class="form-label" >Nama</label><br>
                 <input type="text"/>
             </div>
-            <br>
-
+            
             <h5>Gender:</h5>
             <div style="padding-left: 1%;">
                 <input
                 class=""
                 type="radio"
                 name=""
-                 id=""
+                id=""
                 value=""
                 />
                 <label class="form-check-label">Laki-laki</label>
             </div>
-
+            
             <div style="padding-left: 1%;">
                 <input
                 class=""
@@ -66,27 +69,28 @@
                 <label class="form-check-label">Perempuan</label>
             </div>
             <br>
-
+            
             <div>
                 <label class="form-label" >Nomor Telp.</label><br>
                 <input class="search" type="number" required><br>
             </div>
             <br>
-
+            
             <div class="form-check d-flex justify-content-center mb-5">
                 <label>
                 <input type="checkbox"/>
                 Setujui persyaratan<a href="#!" class="text-body"><u> layanan</u></a>
             </label>
-            </div>
-            <br>
-
-            <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"><a href="/">Register</a></button>
-            </div>
+        </div>
+        <br>
+        
+        <div class="">
+            <button type="button" class=""><a href="/">Register</a></button>
+        </div>
             <p class="text-center text-muted mt-5 mb-0">Sudah punya akun? <a href="/login" class="fw-bold text-body"><u>Masuk</u></a></p>
-      
+            
         </form>
-      </section>
+    </div>
+    </section>
 </body>
 </html>
