@@ -38,14 +38,14 @@ def home(req):
     return render(req, 'home/home.html')
 
 # nav kategori
-def minimalis(req):
-    return render(req, 'home/minimalis.html')
-def luxery(req):
-    return render(req, 'home/luxery.html')
-def industrial(req):
-    return render(req, 'home/industrial.html')
-def klasik(req):
-    return render(req, 'home/klasik.html')
+def pointsaya(req):
+    return render(req, 'home/pointsaya.html')
+def proyeksaya(req):
+    return render(req, 'home/proyeksaya.html')
+def dashboard(req):
+    return render(req, 'home/dashboard.html')
+def akun_saya(req):
+    return render(req, 'home/akun_saya.html')
 
 # nav project
 def cariproject(req):

@@ -11,10 +11,10 @@ urlpatterns = [
     path('login/', views.login),
 
     # nav kategori
-    path('minimalis/', views.minimalis),
-    path('luxery/', views.luxery),
-    path('industrial/', views.industrial),
-    path('klasik/', views.klasik),
+    path('points/', views.pointsaya),
+    path('proyeks/', views.proyeksaya),
+    path('dashboard/', views.dashboard),
+    path('akuns/', views.akun_saya),
 
     # nav project
     path('buatp/', views.buatproject),
@@ -30,18 +30,6 @@ urlpatterns = [
     path('homes/', views.homes),
     path('profil/', views.profil),
     path('detail/', views.detail),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
-    path('customer/', views.customer),
-
-
->>>>>>> 93f178584b31699c56b770222aa763f7aad25360
-
-    path('customer/', views.customer),
->>>>>>> b63230cc866ba0632e854d6bc1a33a423256deb3
     
     path('det/', views.det),
     path('kat/', views.kat),
