@@ -8,7 +8,8 @@ urlpatterns = [
     path('home/', views.home),
 
     path('regis/', views.register),
-    path('login/', views.login),
+    path('login/', views.login_f),
+    path('logout/', views.logout_f),
 
     # nav kategori
     path('points/', views.pointsaya),

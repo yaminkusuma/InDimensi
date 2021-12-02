@@ -56,16 +56,20 @@
 </head>
 <body>
     <center>
-        <form method="post" action=""> 
+        <form method="POST" action=""> 
             {% csrf_token %}
             <div class="container">
                 <h3>InDimensi</h3>
-                <input class="search" type="text" placeholder="Masukan Email..." required><br>
+                <input class="search" name="username" type="text" placeholder="Username" required><br>
                 <br>	
-                <input class="search" type="text" placeholder="Masukan Katasandi..." required><br>
+                <input class="search" name="password" type="password" placeholder="Password" required><br>
                 <br>
                 <button type="submit" class="button">Login</button>
                 <br>
+
+                {% for message in messages %}
+                <p id="messages">{{message}}</p>
+                {% endfor %}
 
                 <div class="pass">
                     <a class="lp" href="" style="color:DodgerBlue;">Lupa password?</a>
