@@ -64,21 +64,6 @@ def about (req):
     return render(req, 'profil/about.html')
 
 
-# def login(req):
-#     if req.POST:
-#         input_email = req.POST['email']
-#         input_password = req.POST['password']
-
-#         user = models.login.objects.filter(email=input_email, password=input_password).first()
-#         print(user)
-#         if user is not None:
-#             return redirect('/')
-#     data = models.login.objects.all()
-#     return render(req, 'Login/login.html', {
-#         'data': data,
-#     })
-
-
 def home(req):
     return render(req, 'home/home.html')
 
@@ -124,3 +109,6 @@ def profil(req):
 
 def detail(req):
     return render(req, 'detail/detail.html')
+
+def transaksi(req):
+    return render(req, 'home/transaksi.html')

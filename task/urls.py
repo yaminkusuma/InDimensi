@@ -34,6 +34,7 @@ urlpatterns = [
     
     path('det/', views.det),
     path('kat/', views.kat),
+    path('trans/', views.transaksi),
 
     
 ]
