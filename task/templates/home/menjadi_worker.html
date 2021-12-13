@@ -1,12 +1,281 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="templates/home">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
+    <style>
+        .text-author{
+            display: inline-block;
+            margin-left: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <h2>Laman menjadi worker</h2>
+   <!-- <div class="navbar"> -->
+    <div class="justify-content-start navbar-collapse" style="display: inline-block; font-size:12px; margin-left: 40px;">
+      <a class="nav-link text text-dark" style="display: inline-block;" aria-current="page" href="#">
+      <i class="fa fa-phone" style="margin-right: 5px;" aria-hidden="true"></i>(021)4576 24676</a>
+      <i class="bi bi-telephone-fill"></i>
+      <a class="nav-link text text-dark" style="display: inline-block;" aria-current="page" href="#">
+      <i class="fa fa-envelope" style="margin-right: 5px;" aria-hidden="true"></i>Contact@indimensi.com</a>
+  </div>
+  <div class="justify-content-end navbar-collapse" style="float:right; font-size:12px; margin-right: 60px;">
+      <a class="nav-link text text-dark" style="display: inline-block;" aria-current="page" href="#">
+      <i class="fa fa-user" style="margin-right: 5px;" aria-hidden="true"></i>{{user}}</a>
+      <a class="nav-link text text-dark" style=" display: inline-block;" aria-current="page" href="/logout">
+      <i class="fa fa-sign-out" style="margin-right: 5px;" aria-hidden="true"></i>Log Out</a>
+  </div>
+  <!-- </div> -->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" style="margin-left: 40px;">
+          <a class="navbar-brand" href="#">InDimension</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="/home">beranda</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Kategori
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="">Minimalis</a></li>
+                  <li><a class="dropdown-item" href="">Luxery</a></li>
+                  <li><a class="dropdown-item" href="">Industrial</a></li>
+                  <li><a class="dropdown-item" href="">Klasik</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Project
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/buatp">Buat preject</a></li>
+                  <li><a class="dropdown-item" href="/carip">Cari project</a></li>
+                  <li><a class="dropdown-item" href="/menjadiwor">Menjadi worker</a></li>
+                  <li><a class="dropdown-item" href="/projectlama">Project lama</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Jasa
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/buatjasa">Buat jasa</a></li>
+                  <li><a class="dropdown-item" href="/carijasa">Cari jasa</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="">Dashboard</a></li>
+                  <li><a class="dropdown-item" href="">Project saya</a></li>
+                  <li><a class="dropdown-item" href="">Akun saya</a></li>
+                  <li><a class="dropdown-item" href="">Point saya</a></li>
+                  <li><a class="dropdown-item" href="">Pengaturan</a></li>
+                </ul>
+              </li>
+                  <div class="justify-content-end navbar-collapse" style="float:right; font-size:15px; padding-left: 50px; padding-right: 60px;">
+                    <a class="nav-link text text-dark" style="display: inline-block;" aria-current="page" href="/login">
+                    <i class="" aria-hidden="true"></i>Login</a>
+                    <a class="nav-link text text-primary" style="display: inline-block;" aria-current="page" href="/regis">
+                    <i class="" aria-hidden="true"></i>Register</a>
+                </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <br>
+        <!-- <div style="width: 1550px; height: 100px; background-color:#ffffff; margin-left:85px; " class="row mb-2"> -->
+          <div class="row g-1" style=" margin-left: 80px; width: 450px;">
+            
+            <div class="col-md-8">
+              <div class="card-body p-2 mt-0" style="margin-right: 40px;">
+                <h5 class="mb-0 mt-0">MENJADI WORKER</h5> <span>Ilzamcawil</span>
+                
+              </div>
+            </div>  
+          </div>
+        <!-- </div> -->
+        <br>
+      </div>
+        <br>
+      <div class="row g-1" style=" margin-left: 850px; width: 450px;">
+        <div class="col-md-4" style="width:100px;">
+          <img style="width:60px; border-radius:100px; margin-left:20px; margin-top:10px" src="https://decorathing.com/wp-content/uploads/2017/09/Luxury-Home-Modern-House-Design-3020.jpg" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body p-2 mt-0" style="margin-right: 40px;">
+            <h5 class="mb-0 mt-0">ilzam cawil</h5> <span>System 16/11/2021 12:36:39 WIB </span>
+            <div class="p-0 mt-1 d-flex justify-content-between rounded text-black-50 stats">
+                <div class="d-flex flex-column"> <span class="projects">Projects</span> <span class="number1">108</span> </div>
+                <div class="d-flex flex-column"> <span class="points">Points</span> <span class="number2">20.23</span> </div>
+                <div class="d-flex flex-column"> <span class="meter">Meter/</span> <span class="number3">24.000</span></div>
+            </div>
+          </div>
+        </div>  
+    </div>
+
+
+        <section class="py-5">
+       
+          <div class="container px-4 px-lg-5 mt-4">
+                    
+            <h6>ALUR MENJADI WORKER</H6>           
+              <div class="row justify-content-center">
+                 
+                  <div class="col-lg-2 col-mb-4" style="height: 200px; " >
+                    <div class="card h-50 " style="background-color:#0073ff">
+                      <div style="margin-left: 10px; margin-top: 12px;">
+                        <h5 class="mb-0 mt-0" >Daftar</h5><h5>></h5>
+                      </div>
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent " style="margin-top: -50px; ">
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-2 col-mb-4" style="height: 200px; " >
+                    <div class="card h-50 " style="background-color:#25cbf5">
+                      <div style="margin-left: 10px; margin-top: 12px;">
+                        <h5 class="mb-0 mt-0" >Cari Project</h5><h5>></h5>
+                      </div>
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent " style="margin-top: -50px; ">
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-2 col-mb-4" style="height: 200px; " >
+                    <div class="card h-50 " style="background-color:#f11ace">
+                      <div style="margin-left: 10px; margin-top: 12px;">
+                        <h5 class="mb-0 mt-0" >Ajukan Penawaran</h5><h5>></h5>
+                      </div>
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent " style="margin-top: -50px; ">
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-2 col-mb-4">
+                    <div class="card h-50" style="background-color:#ffc107">
+                      <div style="margin-left: 10px; margin-top: 12px;">
+                        <h5 class="mb-0 mt-0" >Running Project</h5><h5>></h5>
+                      </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent " style="margin-top: -50px;">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-mb-4">
+                    <div class="card h-50" style="background-color:#dc3545">
+                      <div style="margin-left: 10px; margin-top: 12px;">
+                        <h5 class="mb-0 mt-0" >Kerjakan dan Upload</h5><h5>></h5>
+                      </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent " style="margin-top: -50px;">
+                           
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-mb-4">
+                    <div class="card h-50" style="background-color:rgb(51, 228, 127)">
+                      <div style="margin-left: 10px; margin-top: 5px;">
+                        <h5 class="mb-0 mt-0" >klik tombol Rate Owner; finish</h5><h5>></h5>
+                      </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent " style="margin-top: -50px;">
+                        </div>
+                    </div>
+                  </div>
+                  
+
+                   
+              </div>
+          </div>
+          
+      </section>
+      <section style="width: 85%; margin-left: 100px; margin-top: -5px;">
+          <article>
+              <h1>Worker</h1>
+              <ol>
+                <li>
+                    <a class="more" href="https://projects.co.id/public/new_user/register">Daftar</a>
+                </li>
+                <li>
+                    <div align="justify"><a class="more" href="https://projects.co.id/public/browse_projects">Cari Project<br>
+                    </a>Anda secara otomatis akan mendapatkan notifikasi melalui email setiap ada project baru yang di publish owner, jika Anda memiliki satu atau lebih keahlian yang sesuai dengan project tersebut.<br>
+                    Jika ada notifikasi project baru yang sesuai dengan keahlian Anda, dan Anda merasa mampu untuk mengerjakan project tersebut segeralah lakukan penawaran project.
+                    </div>
+                </li>
+                <li>
+                    <div align="justify">
+                        Ajukan Penawaran
+                    <ul>
+                        <li>Tanyakan secara rinci tentang project yang dimaksud;</li>
+                        <li>Promosikan diri Anda dan ajukan besaran penawaran Anda;</li>
+                        <li>Dalam tahap ini sepertinya Anda membutuhkan strategi penawaran, jika Anda merasa sangat mampu untuk menyelesaikan pekerjaan tersebut mungkin Anda bisa mengajukan penawaran harga yang lebih tinggi dari harga penawaran owner, tapi Anda harus ingat masih banyak worker/freelancer lain yang juga memberikan penawaran pada project tersebut, jadi bersikap bijaklah dalam penawaran project yang Anda lakukan;</li>
+                        <li>Penawaran dilakukan secara tertutup hanya Anda dan owner yang bersangkutan yang mengetahui penawaran Anda.</li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                <div align="justify">Running Project.<br>
+                Anda akan mendapatkan notifikasi melalui sms dan email untuk memulai pekerjaan, jika owner telah menyelesaikan pembayaran project.<br>
+                Dana Project disimpan di rekening escrow Projects.co.id a.n PT Panonpoe Media, sebagai jaminan Anda pasti dibayar jika Anda bisa menyelesaikan project tersebut. </div>
+                </li>
+                <li>
+                <div align="justify">Kerjakan dan Upload
+                <ul>
+                <li> Semua hasil pekerjaan Anda di upload ke Projects.co.id, lalu klik tombol <strong>Report Done</strong> (<em>Owner tidak akan bisa merespon hasil pekerjaan Anda jika Anda tidak meng-klik tombol</em> <strong>Report Done</strong>). </li>
+                <li>Ada beberapa kemungkinan yang bisa owner perbuat terhadap laporan Anda:
+                <ul>
+                <li>Owner menolak hasil pekerjaan Anda (Owner klik tombol <strong>File Arbitration</strong>). </li>
+                </ul>
+                <ul>
+                <li>Owner meminta perbaikan (Owner klik tombol <strong>Need Revision</strong>).
+                <ul>
+                <li>Anda terima permintaan owner (Anda perbaiki kembali pekerjaan Anda), atau</li>
+                <li>Anda tolak permintaan owner, pekerjaan bisa jadi akan masuk ke arbitrase, Anda bisa mengajukan arbitrase (klik tombol <strong>File Arbitration</strong>) atau owner yang mengajukan arbitrase (Owner klik tombol <strong>File Arbitration</strong>).</li>
+                </ul>
+                </li>
+                <li>Owner menerima hasil pekerjaan Anda (Owner klik tombol <strong>Accept Work</strong>).</li>
+                </ul>
+                </li>
+                </ul>
+                </div>
+                </li>
+                <li>
+                <div align="justify">Rating dan Testimony (klik tombol <strong>Rate Owner</strong>);<br>
+                <ul>
+                <li>Rating<br>
+                Berikan penilaian kepada owner setelah project diterima owner (Accept Work).</li>
+                <li>Testimony<br>
+                Berikan pendapat Anda yang menggambarkan perasaan Anda terhadap owner/Projects.co.id, berkaitan dengan penyelenggaraan project tersebut.<br>
+                <em>(Projects.co.id akan memberikan reward kepada Anda, sebagai imbalan dari testimony yang Anda berikan)</em></li>
+                </ul>
+                </div>
+                </li>
+                <li>
+                <div align="justify">Finish</div>
+                </li>
+                </ol>
+          </article>
+      </section>
+      <!-- Footer-->
+      <footer class="py-5 " style="background-color: #53bd84;">
+          <div class="container"><p class="m-0 text-center text-white">programmer: ilzamcawil.com </p></div>
+      </footer>
+      <!-- Bootstrap core JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Core theme JS-->
+      <script src="js/scripts.js"></script>
+    </section>
+  
 </body>
 </html>
+
