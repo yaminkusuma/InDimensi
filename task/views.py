@@ -1,4 +1,5 @@
 from django import forms
+from django.http.response import HttpResponse
 from django.shortcuts import render, redirect
 from . import models
 
@@ -80,8 +81,38 @@ def akun_saya(req):
 # nav project
 def cariproject(req):
     return render(req, 'home/cariproject.html')
+    # -----------
 def buatproject(req):
-    return render(req, 'home/buatproject.html')
+    if req.POST:
+        nama = req.POST['nama']
+        judul = req.POST['judul']
+        type_user = req.POST['type_user']
+        jenis_jasa = req.POST['jenis_jasa']
+        alamat_jasa = req.POST['alamat_jasa']
+        price_jasa = req.POST['price_jasa']
+        deadline_jasa = req.POST['deadline_jasa']
+        catatan = req.POST['catatan']
+        models.buatproject.objects.create(nama = nama, judul = judul, type_user = type_user, jenis_jasa = jenis_jasa, alamat_jasa = alamat_jasa, price_jasa = price_jasa, deadline_jasa = deadline_jasa, catatan = catatan)
+    buatproject = models.buatproject.objects.all()    
+    return render(req, 'home/buatproject.html', {
+        'buatproject' : buatproject
+    })
+
+def buatprojecthapus(req, id):
+    models.buatproject.objects.filter(id=id).delete()
+    return redirect('/buatp')
+def buatprojectedit(request, id):
+    if request. POST:
+        input = request.POST[ "nama"]
+        print(input)
+        models.buatproject.objects.filter(id = id).update(nama = input)
+        return redirect('/')
+    data = models.buatproject.objects.filter(id = id).first()
+    # return render(request,"buatproject/edit.html",{
+    #    "detailData": data,
+    # })
+    return HttpResponse("cuek")
+# ---------------------------------------
 def project_lama(req):
     return render(req, 'home/project_lama.html')
 def menjadi_worker(req):
@@ -90,6 +121,7 @@ def menjadi_worker(req):
 # nav jasa
 def carijasa(req):
     return render(req, 'home/carijasa.html')
+    # -----------
 def buatjasa(req):
     return render(req, 'home/buatjasa.html')
 
