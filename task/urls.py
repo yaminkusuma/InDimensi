@@ -19,6 +19,8 @@ urlpatterns = [
 
     # nav project
     path('buatp/', views.buatproject),
+    path('buatp/hapus/<id>', views.buatprojecthapus),
+    path('buatp/edit/<id>', views.buatprojectedit),
     path('carip/', views.cariproject),
     path('projectlama/', views.project_lama),
     path('menjadiwor/', views.menjadi_worker),
