@@ -33,48 +33,13 @@
         <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" name="deadline_jasa">
         <label for="inputPassword5" class="form-label">Catatan :</label>
         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="catatan"></textarea>
-        <div class="d-flex justify-content-end mt-3">
-            <button type="button" class="btn btn-primary mx-3">Batal</button>
+        <div class="d-flex justify-content-end mt-2">
             <button type="submit" class="btn btn-secondary">Submit</button>
         </div>
     </form>
 
 <br>
-<div>
-    <table class="table">
-        <thead>
-            <th>No</th>
-            <th>Nama</th>
-            <th>Judul</th>
-            <th>type user</th>
-            <th>Jenis Jasa</th>
-            <th>Alamat </th>
-            <th>Harga Jasa</th>
-            <th>Deadline</th>
-            <th>Catatan</th>
-            <th>Aksi</th>
-        </thead>
-        <tbody>
-            {% for d in buatproject%}
-            <tr>
-                <td>{{forloop.counter}}</td>
-                <td>{{d.nama}}</td>
-                <td>{{d.judul}}</td>
-                <td>{{d.type_user}}</td>
-                <td>{{d.jenis_jasa}}</td>
-                <td>{{d.alamat_jasa}}</td>
-                <td>{{d.price_jasa}}</td>
-                <td>{{d.deadline_jasa}}</td>
-                <td>{{d.catatan}}</td>
-                <td style="width: 200px;">
-                    <a href="edit/{{d.id}}" class="btn btn-warning"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                    <a href="hapus/{{d.id}}" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</div>
+
 </section>
 <footer class="py-5" style="background-color: #53bd84;">
     <div class="container"><p class="m-0 text-center text-white">programmer: ilzamcawil.com </p></div>

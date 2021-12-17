@@ -74,7 +74,10 @@ def pointsaya(req):
 def proyeksaya(req):
     return render(req, 'home/proyeksaya.html')
 def dashboard(req):
-    return render(req, 'home/dashboard.html')
+    data= models.buatproject.objects.all()
+    return render(req, 'home/dashboard.html', {
+        'data': data,
+    })
 def akun_saya(req):
     return render(req, 'home/akun_saya.html')
 
@@ -100,7 +103,7 @@ def buatproject(req):
 
 def buatprojecthapus(req, id):
     models.buatproject.objects.filter(id=id).delete()
-    return redirect('/buatp')
+    return redirect('/dashboard')
 def buatprojectedit(request, id):
     if request. POST:
         input = request.POST[ "nama"]
