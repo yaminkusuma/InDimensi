@@ -1,157 +1,192 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="templates/home">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Kota Bandung</title>
     <style>
-        .text-author{
-            display: inline-block;
-            margin-left: 2rem;
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+        padding: 20px;
+        overflow: auto;
+        }
+        
+        nav a {
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        .featured-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        nav a:hover {
+            font-weight: bold;
+        }
+
+        .profile header {
+            text-align: center;
+        }
+
+        h2 {
+            color: #00a2c6
+        }
+        
+        h3 {
+            color: #00a2c6
+        }
+
+        .jumbotron {
+        font-size: 20px;
+        padding: 60px;
+        background-color: #00c8eb;
+        text-align: center;
+        color: white;
+        }
+
+        header {
+        display: inline;
+        }
+
+        nav {
+        background-color: #00a2c6;
+        padding: 5px;
+        position: sticky;
+        top: 0;
+        }
+
+        nav li {
+        display: inline;
+        list-style-type: none;
+        margin-right: 20px;
+        }
+
+        nav a {
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+        }
+
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        }
+
+        #content {
+        float: left;
+        width: 75%;
+        }
+
+        aside {
+        float: right;
+        width: 25%;
+        padding-left: 20px;
+        }
+
+        .profile img {
+        width: 200px;
+        }
+        
+        footer {
+        padding: 20px;
+        color: white;
+        background-color: #00a2c6;
+        text-align: center;
+        font-weight: bold;
+        }
+
+        @media screen and (max-width: 1000px) {
+        #content,
+        aside {
+            width: 100%;
+            padding: 0;
+        }
         }
     </style>
 </head>
 <body>
-    <!-- <div class="navbar"> -->
-      <div class="justify-content-start navbar-collapse" style="display: inline-block; font-size:12px; margin-left: 40px;">
-        <a class="nav-link text text-dark" style="display: inline-block;" aria-current="page" href="#">
-        <i class="fa fa-phone" style="margin-right: 5px;" aria-hidden="true"></i>(021)4576 24676</a>
-        <i class="bi bi-telephone-fill"></i>
-        <a class="nav-link text text-dark" style="display: inline-block;" aria-current="page" href="#">
-        <i class="fa fa-envelope" style="margin-right: 5px;" aria-hidden="true"></i>Contact@indimensi.com</a>
-    </div>
-    <div class="justify-content-end navbar-collapse" style="float:right; font-size:12px; margin-right: 60px;">
-        <a class="nav-link text text-dark" style="display: inline-block;" aria-current="page" href="#">
-        <i class="fa fa-user" style="margin-right: 5px;" aria-hidden="true"></i>{{user}}</a>
-        <a class="nav-link text text-dark" style=" display: inline-block;" aria-current="page" href="/logout">
-        <i class="fa fa-sign-out" style="margin-right: 5px;" aria-hidden="true"></i>Log Out</a>
-    </div>
-    <!-- </div> -->
-    <section>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid" style="margin-left: 40px;">
-          <a class="navbar-brand" href="#">InDimension</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="/home">beranda</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Kategori
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="">Minimalis</a></li>
-                  <li><a class="dropdown-item" href="">Luxery</a></li>
-                  <li><a class="dropdown-item" href="">Industrial</a></li>
-                  <li><a class="dropdown-item" href="">Klasik</a></li>
-                </ul>
-              </li> -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Project
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="/buatp">Buat preject</a></li>
-                  <li><a class="dropdown-item" href="/carip">Cari project</a></li>
-                  <li><a class="dropdown-item" href="/menjadiwor">Menjadi worker</a></li>
-                  <li><a class="dropdown-item" href="/projectlama">Project lama</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Jasa
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="/buatjasa">Buat jasa</a></li>
-                  <li><a class="dropdown-item" href="/carijasa">Cari jasa</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="">Dashboard</a></li>
-                  <li><a class="dropdown-item" href="">Project saya</a></li>
-                  <li><a class="dropdown-item" href="">Akun saya</a></li>
-                  <li><a class="dropdown-item" href="">Point saya</a></li>
-                  <li><a class="dropdown-item" href="">Pengaturan</a></li>
-                </ul>
-              </li>
-                  <div class="justify-content-end navbar-collapse" style="float:right; font-size:15px; padding-left: 50px; padding-right: 60px;">
-                    <a class="nav-link text text-dark" style="display: inline-block;" aria-current="page" href="/login">
-                    <i class="" aria-hidden="true"></i>Login</a>
-                    <a class="nav-link text text-primary" style="display: inline-block;" aria-current="page" href="/regis">
-                    <i class="" aria-hidden="true"></i>Register</a>
-                </div>
-            </ul>
-          </div>
+
+    <main>
+        <div id="content">
+            <article id="sejarah" class="card">
+                <h2>Jasa Desain</h2>
+                <img src="https://decorathing.com/wp-content/uploads/2017/09/Luxury-Home-Modern-House-Design-3020.jpg" class="featured-image" alt="sejarah">
+                <p>Jasa Arsitek Desain rumah tinggal mewah yang berpengalaman dan terpercaya. Temukan arsitek yang cocok dengan kebutuhan anda dan Melayani Seluruh Wilayah Indonesia
+
+                  Klasik · Modern · Mediteran · Tropis, Jasa Arsitek Desain rumah tinggal mewah yang berpengalaman dan terpercaya. Temukan arsitek yang cocok dengan kebutuhan anda dan Melayani Seluruh Wilayah Indonesia
+
+                 
+                <p>Berdasarkan filosofi Sunda, kata Bandung juga berasal dari kalimat Nga-Bandung-an Banda Indung, yang merupakan kalimat sakral dan luhur karena mengandung nilai ajaran Sunda. Nga-Bandung-an artinya menyaksikan atau bersaksi. Banda adalah segala sesuatu yang berada di alam hidup yaitu di bumi dan atmosfer, baik makhluk hidup maupun benda mati. Sinonim dari banda adalah harta. Indung berarti Ibu atau Bumi, disebut juga sebagai Ibu Pertiwi tempat Banda berada.</p>
+            </article>
         </div>
-      </nav>
-    
-      <section class="py-5">
-        <div class="row">
-          <div class="col">
-            <div style="margin-left: 60px; background-color: rgb(72, 235, 235); border-radius: 5px; height: 600px;">
-              <div>
-                 <h4 style="margin-left: 20px; padding-top: 20px;">Jasa Desain</h4>
-                 <p style="margin-left: 20px; padding-top: 10px;">Pemetaan inti ruang untuk rumah tinggal
-                  Jasa perancangan denah dan layout rumah
-                  Harga 5 ribu per meter persegi lahan yang terbangun
-                  Bangun baru maupun renovasi
-                  Silahkan order jasa saya apabila Anda berminat, terima kasih
-                  Jasa perancangan denah dan layout rumah
-                  Harga 5 ribu per meter persegi lahan yang terbangun
-                  Bangun baru maupun renovasi
-                  Silahkan order jasa saya apabila Anda berminat, terima kasih
-                  Jasa perancangan denah dan layout rumah
-                  Harga 5 ribu per meter persegi lahan yang terbangun
-                  Bangun baru maupun renovasi
-                  Silahkan order jasa saya apabila Anda berminat, terima kasih
-                  Jasa perancangan denah dan layout rumah
-                  Harga 5 ribu per meter persegi lahan yang terbangun
-                  Bangun baru maupun renovasi
-                  Silahkan order jasa saya apabila Anda berminat, terima kasih
-                  Jasa perancangan denah dan layout rumah
-                  Harga 5 ribu per meter persegi lahan yang terbangun
-                  Bangun baru maupun renovasi
-                  Silahkan order jasa saya apabila Anda berminat, terima kasih
-                  
-                  </p>
-              </div>
+  
+        <aside>
+            <article class="profile card">
+                 <header>
+                     <h2>Profil</h2>
+                     <p>Kota Budaya, Dyogyakarta</p>
+                     <figure>
+                        <img src="https://decorathing.com/wp-content/uploads/2017/09/Luxury-Home-Modern-House-Design-3020.jpg">
+                      </figure>
+                 </header>
+                 <section>
+                    <h3>Informasi Lainnya</h3>
+                    <table>
+                       <tr>
+                          <th>Negara</th>
+                          <td>Indonesia</td>
+                       </tr>
+                       <tr>
+                          <th>Hari jadi</th>
+                          <td>01 September 2021</td>
+                       </tr>
+                       <tr>
+                          <th>Luas Total</th>
+                          <td>167.67 km<sup>2</sup></td>
+                       </tr>
+                       <tr>
+                          <th>Bahasa Daerah</th>
+                          <td>Yogyakarta</td>
+                       </tr>
+                          <tr>
+                          <th>Kode Telepon</th>
+                          <td>+62 22</td>
+                       </tr>
+                   </table>
+                 </section>
+            </article>
+            <div class="d-flex justify-content-evenly mt-3">
+              <button type="button" class="btn btn-primary">Percakapan</button>
+              <button type="button" class="btn btn-secondary">Ambil Jasa</button>
             </div>
-          </div>
-          <div class="col">
-            <div style="margin-right: 120px;">
-              <div class="text-author" style="float:right; font-size:12px">
-                <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="#">Bid proyek</a></div>
-              </div>
-              <div class="text-author" style="float: right; font-size:12px">
-                <div class="text-center"><a class="btn btn-outline-primary mt-auto" href="#">Percakapan</a></div>
-              </div>
-            </div>
-          </div>
-        </div> 
-      </section>
+        </aside>
 
-      
-      <!-- Footer-->
-      <footer class="py-5" style="background-color: #53bd84;">
-          <div class="container"><p class="m-0 text-center text-white">programmer: ilzamcawil.com </p></div>
-      </footer>
-      <!-- Bootstrap core JS-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-      <!-- Core theme JS-->
-      <script src="js/scripts.js"></script>
-    </section>
+    </main>
 
+    <footer class="py-5 " style="background-color: #53bd84;">
+      <div class="container"><p class="m-0 text-center text-white">programmer: ilzamcawil.com </p></div>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
