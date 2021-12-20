@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,5 +9,65 @@
 </head>
 <body>
   <h3>Transaksi</h3>
+=======
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+    <section class="col-md-8 mx-auto">
+    <div class="mt-4">
+        <h4>Order jasa</h4>
+    </div>
+    <br>
+    <form action="" method="post">
+        {% csrf_token %}
+        <section>
+          <table>
+             <tr>
+                <th>Nama Jasa</th>
+                <td>Jasa apa saja yang menyangkut dengan kuliah dan dunia pendidikan</td>
+             </tr>
+             <tr>
+                <th>Pemilik Jasa</th>
+                <td>Ilzam azizi</td>
+             </tr>
+             <tr>
+                <th>Deskripsi</th>
+                <td>menyediakan jasa apa saja yang menyangkut dengan dunia perkuliahan dan dunia pendidikan</td>
+             </tr>
+             <tr>
+                <th>Biaya</th>
+                <td>Rp. 50.000</td>
+             </tr>
+                <tr>
+                <th> Pembayaran</th>
+                <td> <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" name="deadline_jasa"></td>
+             </tr>
+         </table>
+       </section>
+       
+        <label for="inputPassword5" class="form-label">Pesan</label>
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="catatan"></textarea>
+        <div class="d-flex justify-content-end mt-2">
+            <button type="submit" class="btn btn-secondary">Submit</button>
+        </div>
+    </form>
+
+<br>
+
+</section>
+
+
+<footer class="py-5" style="background-color: #53bd84;">
+  <div class="container"><p class="m-0 text-center text-white">programmer: ilzamcawil.com </p></div>
+</footer>
+>>>>>>> b124fdf19f38b9567aae5e81c302b6ba99b7009a
 </body>
+<script src="https://use.fontawesome.com/cc6ee3f75c.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
