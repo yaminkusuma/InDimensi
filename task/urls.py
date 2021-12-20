@@ -32,6 +32,7 @@ urlpatterns = [
 
     path('homes/', views.homes),
     path('profil/', views.profil),
+    path('prof/', views.profil_p),
     path('detail/', views.detail),
     
     path('det/', views.det),

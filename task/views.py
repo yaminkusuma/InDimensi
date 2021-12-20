@@ -61,6 +61,9 @@ def index(req):
 def profil(req):
     return render(req, 'profil/profil.html')
 
+def profil_p(req):
+    return render(req, 'profil/profil_p.html')
+
 def about (req):
     return render(req, 'profil/about.html')
 
