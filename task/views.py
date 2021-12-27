@@ -150,3 +150,6 @@ def detail(req):
 
 def transaksi(req):
     return render(req, 'home/transaksi.html')
+
+def deal(req):
+    return render(req, 'home/deal.html')
