@@ -15,3 +15,4 @@ crud ambil jasa sudah selesai
 
 menambah jasa
 persiapan final project
+pembuatan erd
